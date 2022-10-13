@@ -47,8 +47,8 @@ New.args = {
   label: 'Confirm',
 };
 
-export const inshaf = Template.bind({});
-inshaf.args ={
+export const msi = Template.bind({});
+msi.args ={
   primary: false,
   size: 'medium',
   label: 'hello'
