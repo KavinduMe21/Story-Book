@@ -50,6 +50,6 @@ New.args = {
 export const msi = Template.bind({});
 msi.args ={
   primary: false,
-  size: 'medium',
+  size: 'middle',
   label: 'hello'
 }

@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  return (
-null
-  );
+  return (null);
 }
 
 export default App;

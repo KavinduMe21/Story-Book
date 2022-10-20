@@ -14,7 +14,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'middle' | 'large';
   /**
    * Button contents
    */
@@ -30,14 +30,17 @@ interface ButtonProps {
  */
 export const Button = ({
   primary = false,
-  size = 'medium',
+  size = 'middle',
   backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  console.log({size,primary});
+  
   return (
     <AntButton
+      size={size}
       // className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       // style={{ backgroundColor }}
       {...props}
