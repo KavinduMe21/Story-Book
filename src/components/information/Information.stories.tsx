@@ -1,8 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import TestComponent from './Test'
-
+import TestComponent from './information'
 export default {
-    title: 'Example/Test',
+    title: 'Information/Information',
     component: TestComponent,
     // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
     argTypes: {
@@ -14,10 +13,4 @@ export default {
 
 const Template: ComponentStory<typeof TestComponent> = (args:any) => <TestComponent {...args} />;
 
-export const Primary = Template.bind({  });
-
-export const Red = Template.bind({  });
-Red.args={
-  color:"red",
-  label:"Red Color Test Compo"
-}
+export const information = Template.bind({  });
